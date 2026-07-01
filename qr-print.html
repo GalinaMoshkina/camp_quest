@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR-коды квеста</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #1f2523;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f6f5;
+      }
+
+      main {
+        width: min(100%, 1040px);
+        margin: 0 auto;
+        padding: 28px;
+      }
+
+      h1 {
+        margin: 0 0 22px;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        break-inside: avoid;
+        padding: 16px;
+        border: 1px solid #d9dfdc;
+        border-radius: 8px;
+        background: #fff;
+        text-align: center;
+      }
+
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 1.25rem;
+        line-height: 1.2;
+      }
+
+      .card img {
+        width: 180px;
+        height: 180px;
+        image-rendering: pixelated;
+      }
+
+      .card p {
+        margin: 12px 0 0;
+        color: #66716d;
+        font-size: 0.78rem;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12mm;
+        }
+
+        .card {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>QR-коды квеста</h1>
+      <section class="grid">
+        <article class="card">
+          <h2>Точка 1</h2>
+          <img src="qrcodes/step-1.png" alt="QR-код точки 1">
+          <p>https://galinamoshkina.github.io/camp_quest/?step=1</p>
+        </article>
+        <article class="card">
+          <h2>Точка 2</h2>
+          <img src="qrcodes/step-2.png" alt="QR-код точки 2">
+          <p>https://galinamoshkina.github.io/camp_quest/?step=2</p>
+        </article>
+        <article class="card">
+          <h2>Точка 3</h2>
+          <img src="qrcodes/step-3.png" alt="QR-код точки 3">
+          <p>https://galinamoshkina.github.io/camp_quest/?step=3</p>
+        </article>
+        <article class="card">
+          <h2>Точка 4</h2>
+          <img src="qrcodes/step-4.png" alt="QR-код точки 4">
+          <p>https://galinamoshkina.github.io/camp_quest/?step=4</p>
+        </article>
+        <article class="card">
+          <h2>Точка 5</h2>
+          <img src="qrcodes/step-5.png" alt="QR-код точки 5">
+          <p>https://galinamoshkina.github.io/camp_quest/?step=5</p>
+        </article>
+        <article class="card">
+          <h2>Точка 6</h2>
+          <img src="qrcodes/step-6.png" alt="QR-код точки 6">
+          <p>https://galinamoshkina.github.io/camp_quest/?step=6</p>
+        </article>
+        <article class="card">
+          <h2>Точка 7</h2>
+          <img src="qrcodes/step-7.png" alt="QR-код точки 7">
+          <p>https://galinamoshkina.github.io/camp_quest/?step=7</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

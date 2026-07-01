@@ -28,6 +28,14 @@
   function renderParagraphs(paragraphs) {
     text.innerHTML = "";
     paragraphs.forEach((paragraph) => {
+      if (typeof paragraph === "object" && paragraph.type === "cipher") {
+        const pre = document.createElement("pre");
+        pre.className = "cipher-block";
+        pre.textContent = paragraph.value;
+        text.appendChild(pre);
+        return;
+      }
+
       const p = document.createElement("p");
       p.textContent = paragraph;
       text.appendChild(p);

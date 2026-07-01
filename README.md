@@ -4,21 +4,37 @@
 
 ## Как работают ссылки
 
-Каждый QR-код должен вести на один из адресов:
+Это один сайт и одна страница. Каждый QR-код отличается только номером этапа в конце ссылки:
 
 ```text
-https://ВАШ_АДРЕС_САЙТА/camp/quest/?step=1
-https://ВАШ_АДРЕС_САЙТА/camp/quest/?step=2
-https://ВАШ_АДРЕС_САЙТА/camp/quest/?step=3
-https://ВАШ_АДРЕС_САЙТА/camp/quest/?step=4
-https://ВАШ_АДРЕС_САЙТА/camp/quest/?step=5
-https://ВАШ_АДРЕС_САЙТА/camp/quest/?step=6
-https://ВАШ_АДРЕС_САЙТА/camp/quest/?step=7
+https://galinamoshkina.github.io/camp_quest/?step=1
+https://galinamoshkina.github.io/camp_quest/?step=2
+https://galinamoshkina.github.io/camp_quest/?step=3
+https://galinamoshkina.github.io/camp_quest/?step=4
+https://galinamoshkina.github.io/camp_quest/?step=5
+https://galinamoshkina.github.io/camp_quest/?step=6
+https://galinamoshkina.github.io/camp_quest/?step=7
 ```
 
 Если дети открывают этап по порядку, текст показывается. Если они пытаются открыть QR-код слишком рано, сайт показывает сообщение, что сначала нужен предыдущий QR-код.
 
 Прогресс хранится на телефоне команды в `localStorage`. Поэтому одной команде лучше проходить маршрут с одного телефона.
+
+## QR-коды
+
+Готовые QR-коды лежат в папке `qrcodes`:
+
+```text
+qrcodes/step-1.png
+qrcodes/step-2.png
+qrcodes/step-3.png
+qrcodes/step-4.png
+qrcodes/step-5.png
+qrcodes/step-6.png
+qrcodes/step-7.png
+```
+
+Для печати можно открыть `qr-print.html`.
 
 ## Где менять задания
 
